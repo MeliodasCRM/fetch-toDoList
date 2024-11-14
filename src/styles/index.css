@@ -1,12 +1,71 @@
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d5006d, #f48fb1); /* Degradado de rosa oscuro a rosa más suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .todo-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .input-container {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .tasksToDo {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .tasksToDo li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .tasksToDo li:last-child {
+    border-bottom: none;
+  }
+  
+  .delete-button {
+    display: none;
+    margin-left: auto;
+  }
+  
+  .task-item:hover .delete-button {
+    display: inline-block;
+  }
+  
